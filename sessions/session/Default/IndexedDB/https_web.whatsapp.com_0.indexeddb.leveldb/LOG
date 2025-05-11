@@ -1,0 +1,19 @@
+2025/04/16-15:24:53.836 3648 Reusing MANIFEST D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/16-15:24:53.839 3648 Recovering log #975
+2025/04/16-15:24:53.877 3648 Reusing old log D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000975.log 
+2025/04/16-15:24:55.397 3908 Level-0 table #983: started
+2025/04/16-15:24:55.510 3908 Level-0 table #983: 323186 bytes OK
+2025/04/16-15:24:55.511 3908 Delete type=0 #975
+2025/04/16-15:24:55.512 3908 Manual compaction at level-0 from ' \x1a\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \x1b\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/16-15:24:57.066 2098 Compacting 1@1 + 4@2 files
+2025/04/16-15:24:57.165 2098 Generated table #984@1: 87231 keys, 2237152 bytes
+2025/04/16-15:24:57.233 2098 Generated table #985@1: 46934 keys, 2229993 bytes
+2025/04/16-15:24:57.306 2098 Generated table #986@1: 49478 keys, 2198998 bytes
+2025/04/16-15:24:57.314 2098 Generated table #987@1: 4062 keys, 78609 bytes
+2025/04/16-15:24:57.314 2098 Compacted 1@1 + 4@2 files => 6744752 bytes
+2025/04/16-15:24:57.315 2098 compacted to: files[ 0 0 4 0 0 0 0 ]
+2025/04/16-15:24:57.315 2098 Delete type=2 #977
+2025/04/16-15:24:57.315 2098 Delete type=2 #978
+2025/04/16-15:24:57.316 2098 Delete type=2 #979
+2025/04/16-15:24:57.316 2098 Delete type=2 #980
+2025/04/16-15:24:57.316 2098 Delete type=2 #983

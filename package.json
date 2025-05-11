@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-bot-finance2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adish",
+  "license": "ISC",
+  "description": "Aplikasi Asisten Keuangan Pribadi",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "canvas": "^3.1.0",
+    "chart.js": "^4.4.8",
+    "chartjs-node-canvas": "^5.0.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.0",
+    "puppeteer": "^24.6.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.27.0"
+  }
+}

@@ -7,10 +7,10 @@
 ## 🚀 Fitur Unggulan
 
 - 📲 **Pendaftaran Pengguna via WhatsApp**  
-  Pengguna dapat mendaftar langsung melalui chat tanpa perlu aplikasi tambahan.
+  Pengguna dapat mendaftar langsung melalui chat tanpa perlu aplikasi tambahan cukup ketik _"daftar"_.
 
 - 🧾 **Pencatatan Keuangan Otomatis**  
-  Cukup kirim pesan seperti _"pengeluaran makan 50000"_ dan bot akan menyimpannya ke database dengan kategori dan keterangan yang relevan.
+  Cukup kirim pesan seperti _"out 50000 makan"_ dan bot akan menyimpannya ke database dengan kategori dan keterangan yang relevan.
 
 - 📊 **Laporan Keuangan Lengkap**  
   Bot menyajikan laporan keuangan harian, mingguan, atau bulanan dalam format teks dan diagram visual yang dikirim langsung ke WhatsApp.

@@ -44,7 +44,7 @@
 ## 📦 Instalasi & Penggunaan (Opsional)
 
 ```bash
-git clone https://github.com/namamu/namarepo.git
-cd namarepo
+git clone https://github.com/adialfatih/wabot-finance.git
+cd wabot-finance
 npm install
-node index.js
+node app.js

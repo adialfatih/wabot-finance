@@ -1,3 +1,4 @@
-2025/04/16-15:24:53.296 37f0 Reusing MANIFEST D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\shared_proto_db/MANIFEST-000001
-2025/04/16-15:24:53.296 37f0 Recovering log #3
-2025/04/16-15:24:53.299 37f0 Reusing old log D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\shared_proto_db/000003.log 
+2025/05/28-21:40:02.483 2d74 Creating DB D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\shared_proto_db since it was missing.
+2025/05/28-21:40:02.494 2d74 Reusing MANIFEST D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\shared_proto_db/MANIFEST-000001
+2025/05/28-21:40:02.494 2d74 Recovering log #3
+2025/05/28-21:40:02.496 2d74 Reusing old log D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\shared_proto_db/000003.log 

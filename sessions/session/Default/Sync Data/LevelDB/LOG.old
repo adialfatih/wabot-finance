@@ -1,3 +1,4 @@
-2025/04/16-15:21:42.632 2178 Reusing MANIFEST D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\Sync Data\LevelDB/MANIFEST-000001
-2025/04/16-15:21:42.639 2178 Recovering log #3
-2025/04/16-15:21:42.639 2178 Reusing old log D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\Sync Data\LevelDB/000003.log 
+2025/05/21-22:01:45.824 2f88 Creating DB D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\Sync Data\LevelDB since it was missing.
+2025/05/21-22:01:45.900 2f88 Reusing MANIFEST D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/05/21-22:01:45.900 2f88 Recovering log #3
+2025/05/21-22:01:45.901 2f88 Reusing old log D:\BELAJAR\whatsapp-bot-finance2\sessions\session\Default\Sync Data\LevelDB/000003.log 

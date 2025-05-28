@@ -1,1 +1,4 @@
 node_modules/
+.wwebjs_cache/
+sessions/
+/logs/system.log

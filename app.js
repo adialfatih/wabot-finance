@@ -121,11 +121,11 @@ async function kirimLaporanBulanan(nomor, nomorBersih, bulan, tahun, jenis = nul
           return;
         }
 
-        const pemasukan = resultIn[0].total_in || 0;
+        const pemasukan = Number(resultIn[0].total_in || 0);
 
         if (jenis === 'in') {
           let teks = `📥 *Laporan Pemasukan* (${namaBulan})\n\n`;
-          teks += `💰 Total Pemasukan: Rp ${pemasukan.toLocaleString('id-ID')}`;
+          teks += `💰 Total Pemasukan : Rp ${pemasukan.toLocaleString('id-ID')}`;
           await client.sendMessage(nomor, teks);
 
           db.query(
@@ -158,11 +158,11 @@ async function kirimLaporanBulanan(nomor, nomorBersih, bulan, tahun, jenis = nul
           return;
         }
 
-        const pengeluaran = resultOut[0].total_out || 0;
+        const pengeluaran = Number(resultOut[0].total_out || 0);
 
         if (jenis === 'out') {
           let teks = `📤 *Laporan Pengeluaran* (${namaBulan})\n\n`;
-          teks += `💸 Total Pengeluaran: Rp ${pengeluaran.toLocaleString('id-ID')}`;
+          teks += `💸 Total Pengeluaran : Rp ${pengeluaran.toLocaleString('id-ID')}`;
           await client.sendMessage(nomor, teks);
 
           db.query(
@@ -187,13 +187,14 @@ async function kirimLaporanBulanan(nomor, nomorBersih, bulan, tahun, jenis = nul
             [nomorBersih, startDate, endDate],
             async (err2, resultIn) => {
               if (err2) return;
-              const pemasukan = resultIn[0].total_in || 0;
+              const pemasukan =  Number(resultIn[0].total_in || 0);
               const net = pemasukan - pengeluaran;
+              
 
               let teks = `📊 *Ringkasan Keuangan* (${namaBulan})\n\n`;
-              teks += `💰 Total Pemasukan: Rp ${pemasukan.toLocaleString('id-ID')}\n`;
-              teks += `💸 Total Pengeluaran: Rp ${pengeluaran.toLocaleString('id-ID')}\n`;
-              teks += `💎 Selisih: Rp ${net.toLocaleString('id-ID')}`;
+              teks += `💰 Total Pemasukan : Rp ${pemasukan.toLocaleString('id-ID')}\n`;
+              teks += `💸 Total Pengeluaran : Rp ${pengeluaran.toLocaleString('id-ID')}\n`;
+              teks += `💎 Selisih : Rp ${net.toLocaleString('id-ID')}`;
               await client.sendMessage(nomor, teks);
             }
           );
@@ -258,11 +259,14 @@ client.on('message', async msg => {
   const tanggal = now.toISOString().split('T')[0];
   const jam = now.toTimeString().split(' ')[0];
   if (isiLower === 'info') {
-    const motivation = getRandomMotivation();
     const menuText = `📌 *Asisten Keuangan Pribadi* \n \nHai! Terima kasih telah menggunakan layanan ini.\nAplikasi ini dibuat dan di kembangkan oleh Grafamedia Software Development And Digital Product. \n\n🔒 Semua data keuangan yang kamu catat bersifat *PRIVAT*, *RAHASIA*, dan *TERENKRIPSI* dengan baik agar hanya kamu sendiri yang bisa mengakses dan melihatnya. Kami menjaga data kamu dengan sepenuh hati ❤️\n \n🤖 Aplikasi ini dibuat *gratis* oleh *Grafamedia* sebagai kontribusi kami untuk membantu masyarakat mengelola keuangan dengan mudah dan aman. \n \n🙏 Jika kamu merasa terbantu dan ingin mendukung pengembangan aplikasi ini, kami sangat senang dan terbuka menerima *donasi sukarela*. 😊 \n\n *#TerimaKasih #JagaKeuangan #AmanBersamaGrafamedia*`;
+    await client.sendMessage(nomor, menuText);
+    return;
+  }
+  if (isiLower === 'motifasi' || isiLower === 'motivasi') {
+    const motivation = getRandomMotivation();
     const menuText2 = `💡 *Motivasi Keuangan Hari Ini*:\n \n"*${motivation}*" \n \nSetiap pengeluaran adalah pilihan. Dengan mencatat dan merencanakan keuangan, kamu sedang menyiapkan masa depan yang lebih tenang, bebas dari stres, dan penuh peluang. Ingat, bukan seberapa besar penghasilanmu, tapi seberapa bijak kamu mengaturnya.`;
     await client.sendMessage(nomor, menuText2);
-    await client.sendMessage(nomor, menuText);
     return;
   }
   //start summary
